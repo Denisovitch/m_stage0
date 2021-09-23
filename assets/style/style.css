@@ -41,6 +41,16 @@
   --font-gold: #9d8665;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+    margin: 0;
+}
+
+
+
+
 .wrapper {
   max-width: 1440px;
   margin: 0 auto;
@@ -125,7 +135,7 @@ html {
 
 /*intro_style-start(Welcome and button)*/
 .welcome {
-  min-height: 100vh;
+  height: 75100vh;
   background: url(../img/back_3.jpg);
   background-size: cover;
   background-position: calc(100%-20px);
