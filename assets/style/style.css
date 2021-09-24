@@ -52,7 +52,7 @@ body {
 header {
   display: flex;
   width: 100%;
-  height: 200px;
+  height: 150px;
   margin-top: -10px;
   background-color: var(--bg-dark);
 }
@@ -60,19 +60,19 @@ header {
 .b_navbar {
   display: flex;
   width: 1440px;
-  height: 50px;
+  height: 33px;
   background-color: var(--dark-red);
   align-items: center;
   /* justify-content: center; */
   justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 74px; /*верх в макете 74, низ 76*/
+  margin-top: 59px; /*верх в макете 59, низ 8*/
 }
 
 .header_list {
   display: flex;
-  width: 720px;
+  width: 775px;
   flex-direction: row;
   justify-content: space-between;
 }
@@ -82,9 +82,54 @@ header {
 } */
 
 .header_link {
-color: white;
-text-decoration: none;
-las
+  color: white;
+  letter-spacing: 2px;
+  padding-right: 55px;
+  text-decoration: none;
+  transition: filter .5s;
 }
 
+.header_link:hover,
+.header_link:focus,
+.header_link:active {
+  cursor: pointer;
+  filter: invert(56%) sepia(23%) saturate(474%) hue-rotate(356deg)
+  brightness(92%) contrast(91%);
+}
+
+
+.contacts {
+  padding-right: 0px;
+}
+
+.logo {
+  display: flex;
+  text-decoration: none;
+  color: #fff;
+  transition: filter .5s;
+}
+
+
+.logo:hover,
+.logo:focus,
+.logo:active {
+  cursor: pointer;
+  filter: invert(56%) sepia(23%) saturate(474%) hue-rotate(356deg)
+  brightness(92%) contrast(91%);
+}
+
+/*допилить стили наведения мышки на лого и на кнопки навигации!!!!!*/
 /*--Конец стилей заголовка навигации--*/
+
+/*--Начало стилей секции Welcome--*/
+.welcome {
+  display: flex;
+  height: 1215px;
+  width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #710707;
+  background-color: var(--bg-dark);
+}
+
+/*--Конец стилей секции Welcome--*/
