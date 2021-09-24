@@ -49,7 +49,7 @@ body {
 }
 
 /*--Начало стилей заголовка навигации--*/
-header {
+.header_wrapper {
   display: flex;
   width: 100%;
   height: 150px;
@@ -61,7 +61,7 @@ header {
   display: flex;
   width: 1440px;
   height: 33px;
-  background-color: var(--dark-red);
+  /* background-color: var(--dark-red); */
   align-items: center;
   /* justify-content: center; */
   justify-content: space-between;
@@ -86,17 +86,17 @@ header {
   letter-spacing: 2px;
   padding-right: 55px;
   text-decoration: none;
-  transition: filter .5s;
+  transition: filter 0.5s;
 }
 
+/*эффекты для кнопок*/
 .header_link:hover,
 .header_link:focus,
 .header_link:active {
   cursor: pointer;
   filter: invert(56%) sepia(23%) saturate(474%) hue-rotate(356deg)
-  brightness(92%) contrast(91%);
+    brightness(92%) contrast(91%);
 }
-
 
 .contacts {
   padding-right: 0px;
@@ -106,30 +106,106 @@ header {
   display: flex;
   text-decoration: none;
   color: #fff;
-  transition: filter .5s;
+  transition: filter 0.5s;
 }
 
-
+/*эффекты для логотипа*/
 .logo:hover,
 .logo:focus,
 .logo:active {
   cursor: pointer;
   filter: invert(56%) sepia(23%) saturate(474%) hue-rotate(356deg)
-  brightness(92%) contrast(91%);
+    brightness(92%) contrast(91%);
 }
 
-/*допилить стили наведения мышки на лого и на кнопки навигации!!!!!*/
 /*--Конец стилей заголовка навигации--*/
 
 /*--Начало стилей секции Welcome--*/
+
+.main_welcome_wrapper {
+  display: flex;
+  width: 100%;
+  height: 810px;
+  /* margin-top: -10px; */
+  background-color: var(--bg-dark);
+}
 .welcome {
   display: flex;
-  height: 1215px;
+  justify-content: space-between;
+  height: 810px;
   width: 1440px;
   margin-left: auto;
   margin-right: auto;
-  color: #710707;
-  background-color: var(--bg-dark);
+  background: var(--bg-dark);
+  background-image: url(../img/mona_welcome.png);
+  background-repeat: no-repeat;
+  background-position: right top;
 }
+
+.welcome_title {
+  display: block;
+  width: 598px;
+  height: 388px;
+  margin-top: 150px;
+  opacity: 0.62;
+  border: 5px solid yellow;
+}
+
+.welcome_h1 {
+  font-family: Forum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 80px;
+  line-height: 90px;
+  /* or 112% */
+  letter-spacing: 5px;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.middle_welcome {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 33px;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+
+.button_welcome {
+  display: block;
+  width: 360px;
+  height: 75px;
+  margin-top: 75px;
+  background: #710707;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.button_welcome_text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 2px;
+  padding: 23px;
+  color: #ffffff;
+}
+
+.button_welcome:hover,
+.button_welcome:focus,
+.button_welcome:active {
+  cursor: pointer;
+  filter: invert(56%) sepia(23%) saturate(474%) hue-rotate(356deg)
+    brightness(92%) contrast(91%);
+}
+
+/* .mona_welcome {
+
+} */
 
 /*--Конец стилей секции Welcome--*/
