@@ -148,7 +148,7 @@ body {
   height: 388px;
   margin-top: 150px;
   opacity: 0.62;
-  border: 5px solid yellow;
+  /* border: 5px solid yellow; */
 }
 
 .welcome_h1 {
@@ -185,20 +185,21 @@ body {
 }
 
 .button_welcome_text {
+  display: inline-block;
   font-family: Roboto;
   font-style: normal;
   font-weight: 300;
   font-size: 22px;
-  line-height: 26px;
-  text-align: center;
   letter-spacing: 2px;
-  padding: 23px;
+  padding-top: 25px;
   color: #ffffff;
+  text-decoration: none;
+  transition: filter 0.5s;
 }
 
-.button_welcome:hover,
-.button_welcome:focus,
-.button_welcome:active {
+.button_welcome_text:hover,
+.button_welcome_text:focus,
+.button_welcome_text:active {
   cursor: pointer;
   filter: invert(56%) sepia(23%) saturate(474%) hue-rotate(356deg)
     brightness(92%) contrast(91%);
