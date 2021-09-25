@@ -196,7 +196,6 @@ body {
   padding-top: 25px;
   color: #ffffff;
   text-decoration: none;
-
 }
 
 .button_welcome:hover,
@@ -208,7 +207,7 @@ body {
 /*--Конец стилей секции Welcome--*/
 
 /*--Начало стилей секции Virtual Tour--*/
-.virtual_tour_wrapper{
+.virtual_tour_wrapper {
   display: flex;
   width: 100%;
   height: 1116px;
@@ -224,35 +223,35 @@ body {
   width: 1440px;
   margin-left: auto;
   margin-right: auto;
-  background: lightcoral;
+  /* background: lightcoral; */
   margin-top: 75px;
   margin-bottom: 75px;
   border: 5px solid yellow;
 }
 
 .underline_text {
-width: 544px;
-height: 90px;
-background-color: turquoise;
-font-family: Forum;
-font-style: normal;
-font-weight: normal;
-font-size: 80px;
-line-height: 90px;
-/* identical to box height, or 112% */
-letter-spacing: 5px;
-text-transform: uppercase;
-color: #9D8665;
+  width: 544px;
+  height: 90px;
+  background-color: turquoise;
+  font-family: Forum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 80px;
+  line-height: 90px;
+  /* identical to box height, or 112% */
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #9d8665;
 }
 
 .line_v_tour {
-margin-top: 25px;
-width: 1440px;
-height: 3px;
-left: 0px;
-top: 115px;
-background: #710707;
-border-radius: 0px;
+  margin-top: 25px;
+  width: 1440px;
+  height: 3px;
+  left: 0px;
+  top: 115px;
+  background: #710707;
+  border-radius: 0px;
 }
 
 .wrapper_3x2_v_tour {
@@ -261,100 +260,69 @@ border-radius: 0px;
   justify-content: space-between;
 }
 
-.v-card {
+.v_card {
   max-width: 440px;
   max-height: 424px;
   /* padding-top: 75px; */
   /* padding-right: 60px; */
-  padding-bottom: 75px; /*hmmmmm*/
+  padding-bottom: 75px;
+  /* background-color: yellow; */
 }
 
-.h3_visiting {
-  /* position: relative; */
-  font-family: Forum;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 32px;
-  line-height: 35px;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  color: #000000;
-  margin-top: 25px;
-  padding-bottom: 9px;
+.v_card_middle {
+  padding-left: 60px;
+  padding-right: 60px;
+  /* background-color: var(--dark-red); */
+  text-decoration: none;
 }
 
-.around_vt {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 200;
-  font-size: 22px;
-  line-height: 26px;
-  color: #000000;
-  padding-bottom: 10px;
-  margin-top: 10px;
+.v1_logo_link {
+  text-decoration: none;
 }
 
-.google_street_pan {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 200;
-  font-size: 18px;
-  line-height: 21px;
-  color: #000000;
+.v1_logo_link:hover {
+  cursor: pointer;
 }
 
-.v1_logo-link:hover {
-  opacity: 0.5;
-  background-size: 100% 2px;
-}
-
-.google_street_pan {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 200;
-  font-size: 18px;
-  line-height: 21px;
-  color: #000000;
-}
-.h3_visiting {
+.h3_virt_tour {
   position: relative;
-  font-family: Forum;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 32px;
-  line-height: 35px;
-  letter-spacing: 5px;
+  font-family: "Forum";
   text-transform: uppercase;
-  color: #000000;
-  margin-top: 25px;
-  padding-bottom: 9px;
+  color: #000;
+  font-weight: 300;
+  font-size: 32px;
+  letter-spacing: 5px;
+  margin-top: 19px;
+  margin-bottom: 20px;
 }
 
-/* .h3_visiting::after {
-  display: block;
+/*линия под заголовком*/
+.h3_virt_tour::after {
   content: "";
-  width: 300px;
-  height: 2px;
   position: absolute;
-  bottom: 0;
+  bottom: -11px;
   left: 0;
-  right: 0;
-  background-color: var(--dark-red);
-} */
-
-.sector-line {
-  margin-top: 9px;
-  width: 300px;
+  right: 140px;
   height: 2px;
-  background-color: var(--dark-red);
-  transition: 0.3s;
+  background-color: #710707;
+  transition: right 0.5s;
+}
+
+.v1_logo_link:hover .h3_virt_tour::after {
+  right: 0px;
 }
 
 
 
+.h3_virt_tour::hover {
+  right: 0px;
+}
 
-
-
-
+h4_virt_tour {
+  font-weight: 200;
+  color: #000;
+  margin-top: 0px;
+  margin-bottom: 9px;
+}
 
 /*--Конец стилей секции Virtual Tour--*/
