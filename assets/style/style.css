@@ -312,8 +312,6 @@ body {
   right: 0px;
 }
 
-
-
 .h3_virt_tour::hover {
   right: 0px;
 }
@@ -324,5 +322,13 @@ h4_virt_tour {
   margin-top: 0px;
   margin-bottom: 9px;
 }
-
 /*--Конец стилей секции Virtual Tour--*/
+
+/*--Начало стилей секции Explore--*/
+
+
+
+
+
+
+/*--Конец стилей секции Explore--*/
