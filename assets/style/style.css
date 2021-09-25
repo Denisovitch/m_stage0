@@ -218,6 +218,7 @@ body {
 
 .virtual_tour {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   height: 1116px;
   width: 1440px;
@@ -225,8 +226,54 @@ body {
   margin-right: auto;
   background: lightcoral;
   margin-top: 75px;
+  margin-bottom: 75px;
   border: 5px solid yellow;
-
 }
+
+.underline_text {
+width: 544px;
+height: 90px;
+background-color: turquoise;
+font-family: Forum;
+font-style: normal;
+font-weight: normal;
+font-size: 80px;
+line-height: 90px;
+/* identical to box height, or 112% */
+letter-spacing: 5px;
+text-transform: uppercase;
+color: #9D8665;
+}
+
+.line_v_tour {
+margin-top: 25px;
+width: 1440px;
+height: 3px;
+left: 0px;
+top: 115px;
+background: #710707;
+border-radius: 0px;
+}
+
+.grid_3x3_v_tour {
+  width: 1440px;
+  height: 923px;
+  background-color: rgb(24, 105, 68);
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2vw;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /*--Конец стилей секции Virtual Tour--*/
