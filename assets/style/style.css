@@ -61,17 +61,17 @@ body {
   background-color: var(--bg-dark);
 }
 
-
 .logo {
   display: flex;
   text-decoration: none;
   color: #fff;
-  transition: filter .4s;
+  transition: filter 0.4s;
 }
 
 .logo:hover {
   cursor: pointer;
-  filter: invert(56%) sepia(23%) saturate(474%) hue-rotate(356deg) brightness(92%) contrast(91%);
+  filter: invert(56%) sepia(23%) saturate(474%) hue-rotate(356deg)
+    brightness(92%) contrast(91%);
 }
 
 .logo__pic {
@@ -88,7 +88,7 @@ body {
 .logo__txt {
   margin-left: 25px;
   margin-top: 2px;
-  font-family: 'Forum';
+  font-family: "Forum";
   font-size: 30px;
   letter-spacing: 0.13em;
 }
@@ -123,7 +123,7 @@ body {
   line-height: 26px;
   /* identical to box height */
   letter-spacing: 2px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 /*эффекты для кнопок*/
@@ -319,6 +319,7 @@ body {
 } */
 
 .v1_logo_link {
+  display: block;
   text-decoration: none;
 }
 
@@ -367,20 +368,63 @@ h4_virt_tour {
 /*--Конец стилей секции Virtual Tour--*/
 
 /*--Начало стилей секции Explore--*/
-.explore_wrapper {
+.sec_explore_wrapper {
   display: flex;
   width: 100%;
   height: 865px;
   background-color: #030303;
   /* padding-top: 75px;
-  padding-bottom: 75px;
-} */
+  padding-bottom: 75px;*/
+}
 
-.explore {
+.sec_explore {
   display: flex;
+  flex-direction: row;
+  margin: 75px auto;
   width: 1440px;
   height: 715px;
   background-color: aqua;
 }
+
+.sec_explore_txt {
+  width: 660px;
+  height: 715x;
+  padding-right: 60px;
+  background-color: rgb(92, 84, 74);
+}
+
+.sec_explore_pic {
+  width: 720px;
+  height: 715x;
+  background-color: blue;
+  background-image: url(../img/explore_pic.png);
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+
+.sec_explore_title {
+  font-family: Forum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 80px;
+  line-height: 90px;
+  /* identical to box height, or 112% */
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.sec_explore_title_line {
+  margin-top: 25px;
+  width: 1440px;
+  height: 3px;
+  left: 0px;
+  top: 115px;
+  background: #710707;
+  border-radius: 0px;
+}
+
+
+
 
 /*--Конец стилей секции Explore--*/
