@@ -449,7 +449,8 @@ h4_virt_tour {
   flex-direction: column;
   width: 1440px;
   height: 1246px;
-  background-color: rgb(58, 94, 94);
+
+  /* background-color: rgb(58, 94, 94); */
 }
 
 .sec_video_title {
@@ -457,7 +458,8 @@ h4_virt_tour {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  background-color: bisque;
+
+  /* background-color: bisque; */
 }
 
 .h2_video_title {
@@ -488,7 +490,7 @@ h4_virt_tour {
   margin-top: 75px;
   max-width: 100%; /*1440px*/
   height: 735px;
-  background-color: blueviolet;
+  /* background-color: blueviolet; */
 }
 
 .button_big_play {
@@ -630,7 +632,7 @@ h4_virt_tour {
   height: 306px;
   margin-top: 40px;
 
-  background-color: cadetblue;
+  /* background-color: cadetblue; */
 }
 
 .sec_video_slider_imgs {
@@ -649,3 +651,21 @@ h4_virt_tour {
 /*--Начало стилей секции Art Gallery--*/
 
 /*--Конец стилей секции Art Gallery--*/
+.sec_art_gal_wrapper {
+  width: 100%;
+  height: 2200px;
+  background-color: black;
+}
+
+.sec_art_gal {
+  display: flex;
+  width: 1440px;
+  height: 2125px;
+  margin:0 auto;  /*блок по центру врапера*/
+
+
+  background-color: burlywood;
+}
+
+
+
