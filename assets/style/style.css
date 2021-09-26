@@ -81,7 +81,7 @@ body {
   padding: 0;
   width: 49px;
   height: 26px;
-  background-image: url(../img/Logo.svg);
+  background-image: url(../img/sec_header_Logo.svg);
   box-shadow: none;
 }
 
@@ -156,7 +156,6 @@ body {
 }
 /*--Конец стилей заголовка навигации--*/
 
-
 /*--Начало стилей секции Welcome--*/
 .sec_welcome_wrapper {
   display: flex;
@@ -174,7 +173,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   background: var(--bg-dark);
-  background-image: url(../img/mona_welcome.png);
+  background-image: url(../img/sec_welcome_monalisa.png);
   background-repeat: no-repeat;
   background-position: calc(50% + 220px) calc(100% - 60px);
 }
@@ -242,7 +241,6 @@ body {
   background-color: var(--font-gold);
 }
 /*--Конец стилей секции Welcome--*/
-
 
 /*--Начало стилей секции Virtual Tour--*/
 .sec_virtual_tour_wrapper {
@@ -367,7 +365,6 @@ h4_virt_tour {
 }
 /*--Конец стилей секции Virtual Tour--*/
 
-
 /*--Начало стилей секции Explore--*/
 .sec_explore_wrapper {
   display: flex;
@@ -398,10 +395,10 @@ h4_virt_tour {
   width: 720px;
   height: 715x;
   margin-top: 15px;
-  background-image: url(../img/explore_pic.png);
+  background-image: url(../img/sec_explore_pic.png);
   background-position: top right;
   background-repeat: no-repeat;
-   /* background-color: blue; */
+  /* background-color: blue; */
 }
 
 .sec_explore_title {
@@ -439,7 +436,6 @@ h4_virt_tour {
 }
 /*--Конец стилей секции Explore--*/
 
-
 /*--Начало стилей секции Video--*/
 .sec_video_wrapper {
   display: flex;
@@ -448,17 +444,110 @@ h4_virt_tour {
   height: 1396px;
   color: #ffffff;
   padding-top: 75px;
- 
-
 }
-
 .sec_video {
-
+  flex-direction: column;
   width: 1440px;
   height: 1246px;
   background-color: rgb(58, 94, 94);
 }
 
+.sec_video_title {
+  height: 90px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: bisque;
+}
 
+.h2_video_title {
+  font-family: Forum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 80px;
+  line-height: 90px;
+  /* identical to box height, or 112% */
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #9d8665;
+}
+
+.p_video_title {
+  max-width: 720px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 38px;
+  /* or 175% */
+  color: #000000;
+  margin-top: 5px; /*надпись по центру title*/
+}
+
+.sec_video_video {
+  margin-top: 75px;
+  max-width: 100%; /*1440px*/
+  height: 735px;
+  background-color: blueviolet;
+}
+
+.button__big_play {
+  padding: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 220px;
+  width: 220px;
+  border: none;
+  background-color: transparent;
+  background-image: url(../img/sec_video_video_playBut.svg);
+}
+
+.video__img {
+  display: flex;
+  height: 650px;
+  margin-top: 90px;
+  background-image: url(../img/sec_video_video.png);
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+}
+
+.button__play {
+  margin-left: 42px;
+  cursor: pointer;
+  height: 30px;
+  width: 23px;
+  border: none;
+  background-color: transparent;
+  background-image: url(assets/svg/interface/play.svg);
+}
+
+.button__volume {
+  margin-left: 38px;
+  cursor: pointer;
+  height: 30px;
+  width: 38px;
+  border: none;
+  background-color: transparent;
+  background-image: url(assets/svg/interface/volume.svg);
+
+}
+
+.button__fullscreen {
+  margin-left: 45px;
+  cursor: pointer;
+  height: 36px;
+  width: 36px;
+  border: none;
+  background-color: transparent;
+  background-image: url(assets/svg/interface/full_screen.svg);
+}
+
+
+
+
+
+.sec_video_slider {
+}
 
 /*--Конец стилей секции Video--*/
