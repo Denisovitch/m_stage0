@@ -53,7 +53,7 @@ body {
 }
 
 /*--Начало стилей заголовка навигации--*/
-.header_wrapper {
+.sec_header_wrapper {
   display: flex;
   width: 100%;
   height: 150px;
@@ -93,7 +93,7 @@ body {
   letter-spacing: 0.13em;
 }
 
-.b_navbar {
+.sec_navbar {
   display: flex;
   width: 1440px;
   height: 33px;
@@ -158,7 +158,7 @@ body {
 
 
 /*--Начало стилей секции Welcome--*/
-.main_welcome_wrapper {
+.sec_welcome_wrapper {
   display: flex;
   width: 100%;
   height: 810px;
@@ -245,7 +245,7 @@ body {
 
 
 /*--Начало стилей секции Virtual Tour--*/
-.virtual_tour_wrapper {
+.sec_virtual_tour_wrapper {
   display: flex;
   width: 100%;
   height: 1266px;
@@ -437,5 +437,28 @@ h4_virt_tour {
   /* or 175% */
   color: #ffffff;
 }
-
 /*--Конец стилей секции Explore--*/
+
+
+/*--Начало стилей секции Video--*/
+.sec_video_wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 1396px;
+  color: #ffffff;
+  padding-top: 75px;
+ 
+
+}
+
+.sec_video {
+
+  width: 1440px;
+  height: 1246px;
+  background-color: rgb(58, 94, 94);
+}
+
+
+
+/*--Конец стилей секции Video--*/
