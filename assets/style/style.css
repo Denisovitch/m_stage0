@@ -74,7 +74,7 @@ body {
   filter: invert(56%) sepia(23%) saturate(474%) hue-rotate(356deg) brightness(92%) contrast(91%);
 }
 
-.logo__img {
+.logo__pic {
   display: block;
   box-sizing: border-box;
   margin: 0;
@@ -85,14 +85,13 @@ body {
   box-shadow: none;
 }
 
-.logo__name {
-  margin-left: 20px;
+.logo__txt {
+  margin-left: 25px;
+  margin-top: 2px;
   font-family: 'Forum';
   font-size: 30px;
   letter-spacing: 0.13em;
 }
-
-
 
 .b_navbar {
   display: flex;
@@ -108,17 +107,23 @@ body {
 
 .header_list {
   display: flex;
-  width: 775px;
+  max-width: 775px;
   flex-direction: row;
   justify-content: space-between;
 }
 
 .header_link {
-  color: white;
-  letter-spacing: 2px;
   padding-right: 55px;
   text-decoration: none;
   transition: filter 0.5s;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 22px;
+  line-height: 26px;
+  /* identical to box height */
+  letter-spacing: 2px;
+  color: #FFFFFF;
 }
 
 /*эффекты для кнопок*/
