@@ -61,6 +61,39 @@ body {
   background-color: var(--bg-dark);
 }
 
+
+.logo {
+  display: flex;
+  text-decoration: none;
+  color: #fff;
+  transition: filter .4s;
+}
+
+.logo:hover {
+  cursor: pointer;
+  filter: invert(56%) sepia(23%) saturate(474%) hue-rotate(356deg) brightness(92%) contrast(91%);
+}
+
+.logo__img {
+  display: block;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 49px;
+  height: 26px;
+  background-image: url(../img/Logo.svg);
+  box-shadow: none;
+}
+
+.logo__name {
+  margin-left: 20px;
+  font-family: 'Forum';
+  font-size: 30px;
+  letter-spacing: 0.13em;
+}
+
+
+
 .b_navbar {
   display: flex;
   width: 1440px;
