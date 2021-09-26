@@ -657,15 +657,45 @@ h4_virt_tour {
   background-color: black;
 }
 
-.sec_art_gal {
+.sec_art_gal_picture-container {
   display: flex;
+  flex-direction: column;
   width: 1440px;
   height: 2125px;
-  margin:0 auto;  /*блок по центру врапера*/
-
+  overflow: hidden;
+  margin: 0 auto; /*блок по центру врапера*/
 
   background-color: burlywood;
 }
 
+.sec_arg_gal_title {
+  height: 165px;
+  width: 1140px;
+  margin-top: 75px;
+  margin-bottom: 75px;
+
+  background-color: cornflowerblue;
+}
+
+.p_sec_arg_gal_title {
+  font-family: Forum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 80px;
+  line-height: 90px;
+  /* identical to box height, or 112% */
+  letter-spacing: 5px;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.sec_art_gal_picture-inner-container {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 36px;
 
 
+  background-color: crimson;
+
+}
