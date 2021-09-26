@@ -97,12 +97,12 @@ body {
   display: flex;
   width: 1440px;
   height: 33px;
-  /* background-color: var(--dark-red); */
   align-items: center;
   justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
   margin-top: 59px; /*верх в макете 59, низ 8*/
+  /* background-color: var(--dark-red); */
 }
 
 .header_list {
@@ -154,11 +154,10 @@ body {
   filter: invert(56%) sepia(23%) saturate(474%) hue-rotate(356deg)
     brightness(92%) contrast(91%);
 }
-
 /*--Конец стилей заголовка навигации--*/
 
-/*--Начало стилей секции Welcome--*/
 
+/*--Начало стилей секции Welcome--*/
 .main_welcome_wrapper {
   display: flex;
   width: 100%;
@@ -166,6 +165,7 @@ body {
   /* margin-top: -10px; */
   background-color: var(--bg-dark);
 }
+
 .welcome {
   display: flex;
   justify-content: space-between;
@@ -243,6 +243,7 @@ body {
 }
 /*--Конец стилей секции Welcome--*/
 
+
 /*--Начало стилей секции Virtual Tour--*/
 .virtual_tour_wrapper {
   display: flex;
@@ -260,16 +261,14 @@ body {
   justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
-  /* background: lightcoral; */
   margin-top: 75px;
-
-  border: 5px solid yellow;
+  /* border: 5px solid yellow; */
+  /* background: lightcoral; */
 }
 
 .underline_text {
   width: 544px;
   height: 90px;
-  background-color: turquoise;
   font-family: Forum;
   font-style: normal;
   font-weight: normal;
@@ -279,6 +278,7 @@ body {
   letter-spacing: 5px;
   text-transform: uppercase;
   color: #9d8665;
+  /* background-color: turquoise; */
 }
 
 .line_v_tour {
@@ -367,14 +367,15 @@ h4_virt_tour {
 }
 /*--Конец стилей секции Virtual Tour--*/
 
+
 /*--Начало стилей секции Explore--*/
 .sec_explore_wrapper {
   display: flex;
   width: 100%;
   height: 865px;
   background-color: #030303;
-  /* padding-top: 75px;
-  padding-bottom: 75px;*/
+  /* padding-top: 75px;*/
+  /*padding-bottom: 75px;*/
 }
 
 .sec_explore {
@@ -383,23 +384,24 @@ h4_virt_tour {
   margin: 75px auto;
   width: 1440px;
   height: 715px;
-  background-color: aqua;
+  /* background-color: aqua; */
 }
 
 .sec_explore_txt {
   width: 660px;
   height: 715x;
   padding-right: 60px;
-  background-color: rgb(92, 84, 74);
+  /* background-color: rgb(92, 84, 74); */
 }
 
 .sec_explore_pic {
   width: 720px;
   height: 715x;
-  background-color: blue;
+  margin-top: 15px;
   background-image: url(../img/explore_pic.png);
   background-position: top right;
   background-repeat: no-repeat;
+   /* background-color: blue; */
 }
 
 .sec_explore_title {
@@ -422,9 +424,18 @@ h4_virt_tour {
   top: 115px;
   background: #710707;
   border-radius: 0px;
+  margin-bottom: 75px;
 }
 
-
-
+.sec_explorer_text {
+  margin-top: 25px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 38px;
+  /* or 175% */
+  color: #ffffff;
+}
 
 /*--Конец стилей секции Explore--*/
