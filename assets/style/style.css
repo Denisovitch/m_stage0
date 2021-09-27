@@ -504,16 +504,16 @@ h4_virt_tour {
   background-image: url(../img/sec_video/sec_video_video_playBut.svg);
 }
 
-.button_big_play,
+/* .button_big_play,
 .button_play,
 .progress,
 .button_volume,
 .volume,
 .button_fullscreen {
   transition: filter 0.5s;
-}
+} */
 
-.button_big_play:hover,
+/* .button_big_play:hover,
 .button_play:hover,
 .progress:hover,
 .button_volume:hover,
@@ -521,7 +521,7 @@ h4_virt_tour {
 .button_fullscreen:hover {
   filter: invert(72%) sepia(9%) saturate(5%) hue-rotate(43deg) brightness(83%)
     contrast(89%);
-}
+} */
 
 .video_img {
   display: flex;
@@ -596,7 +596,7 @@ h4_virt_tour {
   height: 15px;
   border-radius: 50%;
   -webkit-appearance: none;
-  cursor: pointer;
+  cursor: ew-resize;
   background: #fff;
 }
 
@@ -621,7 +621,7 @@ h4_virt_tour {
   height: 15px;
   border-radius: 50%;
   -webkit-appearance: none;
-  cursor: pointer;
+  cursor: ew-resize;
   background: #fff;
 }
 
@@ -705,7 +705,7 @@ h4_virt_tour {
   /* margin-top: -75px; */
   padding-top: 75px;
 
-  background-color: darkseagreen;
+  /* background-color: darkseagreen; */
 }
 
 .sec_buy_tic {
@@ -713,7 +713,255 @@ h4_virt_tour {
   height: 743px;
   margin: 0 auto;
 
-  background-color: dimgrey;
+  /* background-color: dimgrey; */
+}
+
+.sec_buy_tic_underline_text {
+  font-family: Forum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 80px;
+  line-height: 90px;
+  /* identical to box height, or 112% */
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #9d8665;
+}
+
+.line_buy_tic {
+  margin-top: 25px;
+  width: 1440px;
+  height: 3px;
+  left: 0px;
+  top: 115px;
+  background: #710707;
+  border-radius: 0px;
+  margin-bottom: 75px;
+}
+
+.sec_buy_tic_tickets {
+  width: 1440px;
+  height: 550px;
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+
+  /* background-color: gold; */
+}
+
+.sec_buy_tic_pict {
+  margin-right: 60px;
+}
+
+.sec_buy_tic_buy {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  /* background-color: green; */
+}
+
+.tickets_calc {
+  display: flex;
+  float: left;
+}
+
+.tickets_type {
+  width: 270px;
+  height: 211px;
+  color: black;
+
+  background-color: honeydew;
+}
+
+/* .tickets__type .amount__tittle {
+  margin-left: -6px;
+} */
+
+.input:checked + span {
+  color: rgb(33, 160, 61);
+}
+
+.check_type {
+  margin-bottom: 25px;
+
+  display: block;
+  position: relative;
+  /* padding-left: 35px; */
+  /* margin-bottom: 25px; */
+  cursor: pointer;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  /* line-height: 26px; */
+  /* identical to box height */
+
+  color: #000000;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.sec_buy_tic_amount {
+  display: flex;
+  flex-direction: column;
+  width: 175px;
+  height: 443px;
+  text-align: right;
+  justify-content: right;
+
+  /* background-color: blueviolet; */
+}
+
+.amount_tittle {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 33px;
+  margin-bottom: 50px;
+  /* identical to box height */
+  color: #000000;
+}
+
+.amount_basic {
+  margin-top: -25px;
+  margin-bottom: 10px;
+  text-align: left;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26px;
+  /* identical to box height */
+
+  color: #000000;
+}
+
+.amount_senior {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  text-align: left;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26px;
+  /* identical to box height */
+
+  color: #000000;
+
+
+}
+
+
+
+.button {
+  /* margin-bottom: 25px; */
+  height: 50px;
+  width: 150px;
+
+  border: 3px solid black;
+  background-color: white;
+  display: flex;
+
+  /* margin-bottom: 38px; */
+  /* margin-left: 15px; */
+}
+
+.button:hover {
+  border: 3px solid #9d8665;
+}
+
+.number {
+  background-color: white;
+  color:black;
+  all: unset;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  border: none;
+  font-size: 22px;
+
+}
+
+.button_up {
+  background-color: white;
+  color: black;
+  font-size: 32px;
+  margin:auto 4px;
+  border: none;
+  transition: color .4s;
+}
+
+.button_up:hover {
+  cursor: pointer;
+  color: #9D8665;
+}
+
+.calc__total {
+  list-style: none;
+  display: flex;
+  padding-top: 50px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 33px;
+  /* identical to box height */
+
+  letter-spacing: 1.65px;
+
+  color: #000000;
+}
+
+.calc__total p {
+  font-weight: 700;
+  font-size: 28px;
+
+}
+
+.button__buy {
+  margin-top: 50px;
+  list-style: none;
+  padding: 13px 38px;
+  border: none;
+  border-radius: 2px;
+  font-size: 21px;
+  text-decoration: none;
+  letter-spacing: 2px;
+  line-height: 24.61px;
+  color: white;
+  background-color: black;
+  border-width: 0;
+  transition: background-color .5s;
+}
+
+.button__buy:hover {
+  cursor: pointer;
+  background-color: #9D8665;
+}
+
+.amount__type {
+  text-align: left;
+  margin: 12px 0;
+  padding-left: 26px;
+}
+
+.checkmark {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26px;
+  /* identical to box height */
+
+  color: #000000;
 }
 
 /*--Конец стилей секции Bay Tickets--*/

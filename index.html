@@ -282,6 +282,24 @@
             </div>
           </div>
 
+          <script>
+            const progress = document.querySelector(".progress");
+
+            progress.addEventListener("input", function () {
+              const value = this.value;
+              this.style.background = `linear-gradient(to right, #710707 0%, #710707 ${value}%, #fff ${value}%, white 100%)`;
+            });
+          </script>
+
+          <script>
+            const volume = document.querySelector(".volume");
+
+            progress.addEventListener("input", function () {
+              const value2 = this.value2;
+              this.style.background = `linear-gradient(to right, #710707 0%, #710707 ${value2}%, #fff ${value2}%, white 100%)`;
+            });
+          </script>
+
           <!--Три картинки с видео-->
           <div class="sec_video_slider">
             <div class="sec_video_slider_imgs">
@@ -319,18 +337,19 @@
 
       <!--Начало секции Art Gallery-->
       <section class="sec_art_gal_wrapper">
-
         <div class="sec_art_gal_picture-container" id="sec_gallery">
-
           <!--Название секции Art Gallery-->
           <div class="sec_art_gal_title">
             <p class="p_sec_art_gal_title">Art gallery</p>
           </div>
 
           <div class="sec_art_gal_picture-inner-container">
-
             <!--картинки секции-->
-            <img class="img1" src="./assets/img/sec_gallery/galery1.jpg" alt="pic1" />
+            <img
+              class="img1"
+              src="./assets/img/sec_gallery/galery1.jpg"
+              alt="pic1"
+            />
             <img src="./assets/img/sec_gallery/galery2.jpg" alt="pic2" />
             <img src="./assets/img/sec_gallery/galery3.jpg" alt="pic2" />
             <img src="./assets/img/sec_gallery/galery4.jpg" alt="pic4" />
@@ -345,25 +364,136 @@
             <img src="./assets/img/sec_gallery/galery13.jpg" alt="pic13" />
             <img src="./assets/img/sec_gallery/galery14.jpg" alt="pic14" />
             <img src="./assets/img/sec_gallery/galery15.jpg" alt="pic15" />
-
           </div>
-
         </div>
       </section>
       <!--Конец секции Art Gallery-->
 
-      <!--Начало секции Bay Tickets-->
+      <!--Начало секции Buy Tickets-->
 
-        <div class="sec_buy_tic_wrapper">
-
-          <div class="sec_buy_tic">
-            
+      <div class="sec_buy_tic_wrapper">
+        <div class="sec_buy_tic">
+          <!--Текст и черта-->
+          <div class="sec_buy_tic_underline_text">
+            <h2>Buy tickets</h2>
+            <p class="line_buy_tic"></p>
           </div>
 
+          <div class="sec_buy_tic_tickets">
+            <div class="sec_buy_tic_pict">
+              <img src="./assets/img/sec_buy_tic_pic.png" alt="buy_tic" />
+            </div>
 
+            <div class="sec_buy_tic_buy">
+              <div class="tickets_type">
+                <!--Заголовок-->
+                <div class="amount_tittle">Ticket Type</div>
+                <!--Кнопки-->
+                <label class="check_type">
+                  <input type="radio" name="radio" checked="checked" />
+                  <span class="checkmark">Permanent exhibition</span>
+                </label>
+                <label class="check_type">
+                  <input type="radio" name="radio" />
+                  <span class="checkmark">Temporary exhibition</span>
+                </label>
+                <label class="check_type">
+                  <input type="radio" name="radio" />
+                  <span class="checkmark">Combined Admission</span>
+                </label>
+              </div>
+
+              <!--Amount-->
+              <div class="sec_buy_tic_amount">
+                <!--Заголовок-->
+                <div class="amount_tittle">Amount</div>
+
+                <div class="amount_basic">Basic 18+</div>
+
+                <div class="button">
+                  <button
+                    type="button"
+                    onclick="this.nextElementSibling.stepDown()"
+                    class="button_up"
+                  >
+                    &ndash;
+                  </button>
+                  <input
+                    type="number"
+                    min="0"
+                    max="100"
+                    value="1"
+                    style="color: black; font-size: 22px;"
+                    readonly
+                    class="number"
+                  />
+                  <button
+                    type="button"
+                    onclick="this.previousElementSibling.stepUp()"
+                    class="button_up"
+                  >
+                    +
+                  </button>
+                </div>
+
+                <div class="amount_senior">Senior 65+</div>
+
+
+
+                <div class="button">
+                  <button
+                    type="button"
+                    onclick="this.nextElementSibling.stepDown()"
+                    class="button_up"
+                  >
+                    &ndash;
+                  </button>
+                  <input
+                    type="number"
+                    min="0"
+                    max="100"
+                    value="1"
+                    style="color: black; font-size: 22px;"
+                    readonly
+                    class="number"
+                  />
+                  <button
+                    type="button"
+                    onclick="this.previousElementSibling.stepUp()"
+                    class="button_up"
+                  >
+                    +
+                  </button>
+
+                </div>
+
+                     <!--Total-->
+                     <div class="calc__total">
+                      <p>Total €</p>
+                      <p class="total__price">220</p>
+                  </div>
+
+                  <button class="button__buy">
+                    Buy Now
+                </button>
+
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
 
-      <!--Конец Начало секции Bay Tickets-->
+      <!--Конец Начало секции Buy Tickets-->
+
+
+      
+
+
+
+
+
+
 
 
 
