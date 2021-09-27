@@ -370,148 +370,227 @@
       <!--Конец секции Art Gallery-->
 
       <!--Начало секции Buy Tickets-->
-
-      <div class="sec_buy_tic_wrapper">
-        <div class="sec_buy_tic">
-          <!--Текст и черта-->
-          <div class="sec_buy_tic_underline_text">
-            <h2>Buy tickets</h2>
-            <p class="line_buy_tic"></p>
-          </div>
-
-          <div class="sec_buy_tic_tickets">
-            <div class="sec_buy_tic_pict">
-              <img src="./assets/img/sec_buy_tic_pic.png" alt="buy_tic" />
+      <section class="buy_tic">
+        <div class="sec_buy_tic_wrapper" id="sec_tickets">
+          <div class="sec_buy_tic">
+            <!--Текст и черта-->
+            <div class="sec_buy_tic_underline_text">
+              <h2>Buy tickets</h2>
+              <p class="line_buy_tic"></p>
             </div>
 
-            <div class="sec_buy_tic_buy">
-              <div class="tickets_type">
-                <!--Заголовок-->
-                <div class="amount_tittle">Ticket Type</div>
-                <!--Кнопки-->
-                <label class="check_type">
-                  <input type="radio" name="radio" checked="checked" />
-                  <span class="checkmark">Permanent exhibition</span>
-                </label>
-                <label class="check_type">
-                  <input type="radio" name="radio" />
-                  <span class="checkmark">Temporary exhibition</span>
-                </label>
-                <label class="check_type">
-                  <input type="radio" name="radio" />
-                  <span class="checkmark">Combined Admission</span>
-                </label>
+            <div class="sec_buy_tic_tickets">
+              <div class="sec_buy_tic_pict">
+                <img src="./assets/img/sec_buy_tic_pic.png" alt="buy_tic" />
               </div>
 
-              <!--Amount-->
-              <div class="sec_buy_tic_amount">
-                <!--Заголовок-->
-                <div class="amount_tittle">Amount</div>
-
-                <div class="amount_basic">Basic 18+</div>
-
-                <div class="button">
-                  <button
-                    type="button"
-                    onclick="this.nextElementSibling.stepDown()"
-                    class="button_up"
-                  >
-                    &ndash;
-                  </button>
-                  <input
-                    type="number"
-                    min="0"
-                    max="100"
-                    value="1"
-                    style="color: black; font-size: 22px;"
-                    readonly
-                    class="number"
-                  />
-                  <button
-                    type="button"
-                    onclick="this.previousElementSibling.stepUp()"
-                    class="button_up"
-                  >
-                    +
-                  </button>
+              <div class="sec_buy_tic_buy">
+                <div class="tickets_type">
+                  <!--Заголовок-->
+                  <div class="amount_tittle">Ticket Type</div>
+                  <!--Кнопки-->
+                  <label class="check_type">
+                    <input type="radio" name="radio" checked="checked" />
+                    <span class="checkmark">Permanent exhibition</span>
+                  </label>
+                  <label class="check_type">
+                    <input type="radio" name="radio" />
+                    <span class="checkmark">Temporary exhibition</span>
+                  </label>
+                  <label class="check_type">
+                    <input type="radio" name="radio" />
+                    <span class="checkmark">Combined Admission</span>
+                  </label>
                 </div>
 
-                <div class="amount_senior">Senior 65+</div>
+                <!--Amount-->
+                <div class="sec_buy_tic_amount">
+                  <!--Заголовок-->
+                  <div class="amount_tittle">Amount</div>
 
+                  <div class="amount_basic">Basic 18+</div>
 
-
-                <div class="button">
-                  <button
-                    type="button"
-                    onclick="this.nextElementSibling.stepDown()"
-                    class="button_up"
-                  >
-                    &ndash;
-                  </button>
-                  <input
-                    type="number"
-                    min="0"
-                    max="100"
-                    value="1"
-                    style="color: black; font-size: 22px;"
-                    readonly
-                    class="number"
-                  />
-                  <button
-                    type="button"
-                    onclick="this.previousElementSibling.stepUp()"
-                    class="button_up"
-                  >
-                    +
-                  </button>
-
-                </div>
-
-                     <!--Total-->
-                     <div class="calc__total">
-                      <p>Total €</p>
-                      <p class="total__price">220</p>
+                  <div class="button">
+                    <button
+                      type="button"
+                      onclick="this.nextElementSibling.stepDown()"
+                      class="button_up"
+                    >
+                      &ndash;
+                    </button>
+                    <input
+                      type="number"
+                      min="0"
+                      max="100"
+                      value="1"
+                      style="color: black; font-size: 22px"
+                      readonly
+                      class="number"
+                    />
+                    <button
+                      type="button"
+                      onclick="this.previousElementSibling.stepUp()"
+                      class="button_up"
+                    >
+                      +
+                    </button>
                   </div>
 
-                  <button class="button__buy">
-                    Buy Now
-                </button>
+                  <div class="amount_senior">Senior 65+</div>
 
+                  <div class="button">
+                    <button
+                      type="button"
+                      onclick="this.nextElementSibling.stepDown()"
+                      class="button_up"
+                    >
+                      &ndash;
+                    </button>
+                    <input
+                      type="number"
+                      min="0"
+                      max="100"
+                      value="1"
+                      style="color: black; font-size: 22px"
+                      readonly
+                      class="number"
+                    />
+                    <button
+                      type="button"
+                      onclick="this.previousElementSibling.stepUp()"
+                      class="button_up"
+                    >
+                      +
+                    </button>
+                  </div>
+                  <!--Total-->
+                  <div class="calc_total">
+                    <p>Total €</p>
+                    <p class="total__price">220</p>
+                  </div>
+
+                  <button class="button_buy">Buy Now</button>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-
+      </section>
       <!--Конец секции Buy Tickets-->
 
       <!--Начало секции Параллакс-->
-
-      
-
-
-
-
-
+      <section class="Paral">
+        <div class="sec_paral_wrapper"></div>
+      </section>
       <!--Конец секции Параллакс-->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      <!--Начало секции Contacts-->
+      <section class="contacts">
+        <div class="sec_cont_wrapper" id="sec_contacts">
+          <div class="sec_container__contacts">
+            <h2 class="sec_buy_tic_underline_text">Contacts</h2>
+            <p class="line_buy_tic"></p>
+            <div class="contacts__inner">
+              <div class="contacts__item">
+                <div class="name__museum">
+                  Palais Royal <br />
+                  Musee du Louvre
+                </div>
+                <div class="contacts__data">
+                  <p>address: <a href="#">75001 Paris, France</a></p>
+                  <p>
+                    phone: <a href="tel:+330140205050">+33(0) 1 40 20 50 50</a>
+                  </p>
+                  <p>
+                    mail: <a href="mailto:info@louvre.fr">info@louvre.fr</a>
+                  </p>
+                </div>
+              </div>
+              <div class="google__map">
+                <img src="./assets/img/sec_contacts_map.png" alt="google_map" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Конец секции Contacts-->
     </main>
 
-    <footer></footer>
+    <!--Начало секции Footer-->
+    <footer class="footer">
+      <div class="container container__footer">
+        <a href="#header" class="logo">
+          <div class="logo__img"></div>
+          <div class="logo__name">LOUVRE</div>
+        </a>
+
+        <nav class="nav__sub">
+          <ul class="nav__block">
+            <li>
+              <a href="#welcome">Welcome</a>
+            </li>
+
+            <li>
+              <a href="#visiting">Visiting</a>
+            </li>
+
+            <li>
+              <a href="#explore">Explore</a>
+            </li>
+
+            <li>
+              <a href="#video">Video</a>
+            </li>
+
+            <li>
+              <a href="#tickets">Tickets</a>
+            </li>
+
+            <li>
+              <a href="#contacts">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="social">
+          <li class="social__item">
+            <a
+              href="https://www.youtube.com/user/louvre"
+              target="_blank"
+              class="icon__youtube"
+            ></a>
+          </li>
+          <li class="social__item">
+            <a
+              href="https://www.instagram.com/museelouvre/"
+              target="_blank"
+              class="icon__instagram"
+            ></a>
+          </li>
+          <li class="social__item">
+            <a
+              href="https://www.facebook.com/museedulouvre"
+              target="_blank"
+              class="icon__facebook"
+            ></a>
+          </li>
+          <li class="social__item">
+            <a
+              href="http://twitter.com/museelouvre"
+              target="_blank"
+              class="icon__twitter"
+            ></a>
+          </li>
+          <li class="social__item">
+            <a
+              href="https://www.pinterest.fr/museedulouvre/"
+              target="_blank"
+              class="icon__pinterest"
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <!--Конец секции Footer-->
   </body>
 </html>

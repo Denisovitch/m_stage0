@@ -703,7 +703,7 @@ h4_virt_tour {
   width: 100%;
   height: 893px;
   /* margin-top: -75px; */
-  padding-top: 75px;
+  /* padding-top: 75px; */
 
   /* background-color: darkseagreen; */
 }
@@ -711,7 +711,7 @@ h4_virt_tour {
 .sec_buy_tic {
   width: 1440px;
   height: 743px;
-  margin: 0 auto;
+  margin: 75px auto;
 
   /* background-color: dimgrey; */
 }
@@ -855,11 +855,7 @@ h4_virt_tour {
   /* identical to box height */
 
   color: #000000;
-
-
 }
-
-
 
 .button {
   /* margin-bottom: 25px; */
@@ -880,31 +876,30 @@ h4_virt_tour {
 
 .number {
   background-color: white;
-  color:black;
+  color: black;
   all: unset;
   width: 100%;
   text-align: center;
   margin: auto;
   border: none;
   font-size: 22px;
-
 }
 
 .button_up {
   background-color: white;
   color: black;
   font-size: 32px;
-  margin:auto 4px;
+  margin: auto 4px;
   border: none;
-  transition: color .4s;
+  transition: color 0.4s;
 }
 
 .button_up:hover {
   cursor: pointer;
-  color: #9D8665;
+  color: #9d8665;
 }
 
-.calc__total {
+.calc_total {
   list-style: none;
   display: flex;
   padding-top: 50px;
@@ -920,13 +915,12 @@ h4_virt_tour {
   color: #000000;
 }
 
-.calc__total p {
+.calc_total p {
   font-weight: 700;
   font-size: 28px;
-
 }
 
-.button__buy {
+.button_buy {
   margin-top: 50px;
   list-style: none;
   padding: 13px 38px;
@@ -939,12 +933,12 @@ h4_virt_tour {
   color: white;
   background-color: black;
   border-width: 0;
-  transition: background-color .5s;
+  transition: background-color 0.5s;
 }
 
-.button__buy:hover {
+.button_buy:hover {
   cursor: pointer;
-  background-color: #9D8665;
+  background-color: #9d8665;
 }
 
 .amount__type {
@@ -965,3 +959,93 @@ h4_virt_tour {
 }
 
 /*--Конец стилей секции Bay Tickets--*/
+
+/*--Начало стилей секции Paral--*/
+.sec_paral_wrapper {
+  width: 100%;
+  height: 400px;
+  /* margin-top: -75px; */
+  /* background-color: blueviolet; */
+
+  background-image: url(../img/sec_paral_pic.jpg);
+
+  background-size: cover;
+  background-attachment: fixed;
+  margin-bottom: 75px;
+}
+/*--Конец стилей секции Paral--*/
+
+/*--Начало стилей секции Contacts--*/
+.sec_cont_wrapper {
+  width: 100%;
+  height: 966px;
+
+  background-color: white;
+}
+
+.sec_container__contacts {
+  margin: 0 auto;
+  width: 1440px;
+  height: 813px;
+
+  background-color: cadetblue;
+}
+
+.container__contacts {
+  color: #000;
+  padding-bottom: 75px;
+}
+
+.container__contacts h2 {
+  color: #9d8665;
+}
+
+.contacts__inner {
+  margin-top: 75px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts__item {
+  font-weight: 500;
+  margin: 10px 0 0 0px;
+}
+
+.name__museum {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 33px;
+
+  color: #000000;
+}
+
+.contacts__data {
+  padding-top: 16px;
+}
+
+.contacts__data p {
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 25.78px;
+  text-decoration: none;
+  color: #000;
+}
+
+.contacts__data a {
+  font-size: 22px;
+  text-decoration: none;
+  color: #000;
+}
+
+.contacts__data a:hover {
+  text-decoration: underline;
+  color: #9d8665;
+}
+
+.google__map {
+  max-height: 620px;
+}
+
+/*--Конец стилей секции Contacts--*/
