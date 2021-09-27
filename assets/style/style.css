@@ -988,7 +988,7 @@ h4_virt_tour {
   width: 1440px;
   height: 813px;
 
-  background-color: cadetblue;
+  /* background-color: cadetblue; */
 }
 
 .container__contacts {
@@ -1051,6 +1051,119 @@ h4_virt_tour {
 /*--Конец стилей секции Contacts--*/
 
 /*--Начало стилей секции Footer--*/
+.footer {
+  margin-top: -75px;
+  padding-top: 84px;
+  background-color: #000;
+}
 
+.sec_foot_wrapper {
+  display: flex;
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.logo_txt_foot {
+  margin-top: 2px;
+  margin-left: 25px;
+}
+
+.nav__sub {
+  display: flex;
+
+  margin-left: 75px;
+}
+
+.nav__block {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 180px;
+  padding-left: 0px;
+  margin-top: -8px;
+  font-size: 22px;
+  font-weight: 100;
+  line-height: 50px;
+  letter-spacing: 2px;
+
+}
+
+.nav__sub li {
+  margin-right: 86px;
+}
+
+.nav__sub li a {
+  margin-left: 71px;
+  text-decoration: none;
+  color: #fff;
+  transition: color .4s ;
+}
+
+.nav__sub li a:hover {
+  color: #9d8665;
+}
+
+.social {
+  display: flex;
+  margin: 78px 0px 90px 534px
+}
+
+.social__item {
+  height: 48px;
+  width: 48px;
+  border: solid 1px #666666;
+  border-radius: 50%;
+  margin-right: 22px;
+  transition: filter .4s;
+}
+
+.social__item:hover {
+  filter: invert(56%) sepia(23%) saturate(474%) hue-rotate(356deg) brightness(92%) contrast(91%);
+}
+
+.icon__youtube {
+  height: 48px;
+  width: 48px;
+  display: block;
+  background-image: url(../img/sec_footer/sec_footer_youtube.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.icon__instagram {
+  height: 48px;
+  width: 48px;
+  display: block;
+  background-image: url(../img/sec_footer/sec_footer_Instagram.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.icon__facebook {
+  height: 48px;
+  width: 48px;
+  display: block;
+  background-image: url(../img/sec_footer/sec_footer_Facebook.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.icon__twitter {
+  height: 48px;
+  width: 48px;
+  display: block;
+  background-image: url(../img/sec_footer/sec_footer_Twitter.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.icon__pinterest {
+  height: 48px;
+  width: 48px;
+  display: block;
+  background-image: url(../img/sec_footer/sec_footer_Pinterest.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
 
 /*--Конец стилей секции Footer--*/
