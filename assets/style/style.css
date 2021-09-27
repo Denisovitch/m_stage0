@@ -1028,6 +1028,7 @@ h4_virt_tour {
 .contacts__data p {
   font-weight: 300;
   font-size: 22px;
+  margin-top: 25px;
   line-height: 25.78px;
   text-decoration: none;
   color: #000;
