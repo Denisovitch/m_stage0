@@ -649,8 +649,6 @@ h4_virt_tour {
 /*--Конец стилей секции Video--*/
 
 /*--Начало стилей секции Art Gallery--*/
-
-/*--Конец стилей секции Art Gallery--*/
 .sec_art_gal_wrapper {
   width: 100%;
   height: 2200px;
@@ -665,19 +663,19 @@ h4_virt_tour {
   overflow: hidden;
   margin: 0 auto; /*блок по центру врапера*/
 
-  background-color: burlywood;
+  /* background-color: burlywood; */
 }
 
-.sec_arg_gal_title {
+.sec_art_gal_title {
   height: 165px;
   width: 1140px;
   margin-top: 75px;
   margin-bottom: 75px;
 
-  background-color: cornflowerblue;
+  /* background-color: cornflowerblue; */
 }
 
-.p_sec_arg_gal_title {
+.p_sec_art_gal_title {
   font-family: Forum;
   font-style: normal;
   font-weight: normal;
@@ -694,8 +692,28 @@ h4_virt_tour {
   display: flex;
   flex-wrap: wrap;
   column-gap: 36px;
+  row-gap: 24px;
 
-
-  background-color: crimson;
-
+  /* background-color: crimson; */
 }
+/*--Конец стилей секции Art Gallery--*/
+
+/*--Начало стилей секции Bay Tickets--*/
+.sec_buy_tic_wrapper {
+  width: 100%;
+  height: 893px;
+  /* margin-top: -75px; */
+  padding-top: 75px;
+
+  background-color: darkseagreen;
+}
+
+.sec_buy_tic {
+  width: 1440px;
+  height: 743px;
+  margin: 0 auto;
+
+  background-color: dimgrey;
+}
+
+/*--Конец стилей секции Bay Tickets--*/
